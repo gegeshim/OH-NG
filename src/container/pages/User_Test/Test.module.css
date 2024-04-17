@@ -1,0 +1,25 @@
+.testBox {
+  padding: 10px;
+}
+
+.uploadButtons > button {
+  padding: 10px;
+}
+.uploadButtons > div {
+  display: none;
+}
+.uploadButtons > div.showOptions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 80px;
+  border: 1px solid #ddd;
+}
+.uploadButtons > div button {
+  padding: 10px;
+  text-align: center;
+}
+.uploadButtons > div button + button {
+  border-top: 1px solid #ddd;
+}

@@ -1,0 +1,24 @@
+.breadCrumb {
+  display: flex;
+  align-items: center;
+}
+.breadCrumb li {
+  /* line-height: 23px; */
+  font-size: 13px;
+  color: #818594;
+}
+.breadCrumb li + li {
+  display: flex;
+  align-items: center;
+}
+.breadCrumb li + li::before {
+  content: '>';
+  /* width: 12px;
+  height: 12px; */
+  margin: 0 5px;
+  /* line-height: 8px; */
+  color: #818594;
+}
+.breadCrumb li:last-child {
+  color: #27282E;
+}

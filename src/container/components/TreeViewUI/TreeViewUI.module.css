@@ -1,0 +1,11 @@
+.itemWrap {
+  display: flex;
+  align-items: center;
+}
+.chevronIcon {
+  width: 16px;
+  height: 16px;
+}
+.itemName {
+
+}

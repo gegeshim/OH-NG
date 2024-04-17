@@ -1,0 +1,17 @@
+{
+  "언어" : "language",
+  "한국어" : "korean",
+  "영어" : "english",
+  "로그인": "Login",
+  "이메일" : "email",
+  "이메일 오류": "check your email format",
+  "비밀번호" : "password",
+  "비밀번호 오류" : "check your password format",
+  "탐색기": "Explorer",
+  "테스트": "Test",
+  "업로드": "upload",
+  "파일": "file",
+  "폴더": "folder",
+  "리스트": "list",
+  "아이콘": "icon" 
+}

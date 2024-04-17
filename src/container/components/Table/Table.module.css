@@ -1,0 +1,21 @@
+.tableWrap {}
+.table {
+  width: 100%;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.table tr {
+  border-top: 1px solid #ddd;
+}
+.table th, .table td {
+  padding: 10px 0;
+}
+.table tbody tr:hover {
+  background-color: #dddddd98;
+}
+.table .ta-c {
+  text-align: center;
+}
+.pagenation .pagenationWrap {
+  display: flex;
+}

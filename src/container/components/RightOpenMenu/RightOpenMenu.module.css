@@ -1,0 +1,25 @@
+.rightOpenMenu {
+  min-width: 102px;
+  padding: 4px 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+.rightOpenMenu li {
+  padding: 4px;
+  font-weight: 500;
+  color: #27282E;
+  cursor: pointer;
+}
+.rightOpenMenu li + li {
+  border-top: 1px solid #ddd;
+}
+.rightOpenMenu li span {
+  display: block;
+  width: 100%;
+  padding: 2px 10px;
+  line-height: 24px;
+}
+.rightOpenMenu li:hover span {
+  background-color: #F7F8FA;
+}

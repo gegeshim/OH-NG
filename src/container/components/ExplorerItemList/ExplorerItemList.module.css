@@ -1,0 +1,52 @@
+.explorerSorting {
+  display: flex;
+  padding: 4px 8px;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+  padding-right: 32px;
+}
+.explorerSorting li:nth-child(1) {
+  background-color: red;
+  width: 24px;
+  height: 24px;
+}
+.explorerSorting li:nth-child(2) {
+  width: 57%;
+  max-width: 666px;
+}
+.explorerSorting li:nth-child(3) {
+  width: 80px;
+  text-align: center;
+}
+.explorerSorting li:nth-child(4) {
+  width: 150px;
+  text-align: center;
+}
+.explorerSorting li:nth-child(5) {
+  width: 10%;
+  max-width: 120px;
+  min-width: 80px;
+  background: red;
+}
+.explorerItemList {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding-right: 24px;
+  overflow-y: scroll
+}
+.iconView {
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 32px 24px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+.listView {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: calc(100% - 34px);
+  padding-right: 20px;
+}
+

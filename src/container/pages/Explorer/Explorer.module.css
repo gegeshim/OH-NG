@@ -1,0 +1,199 @@
+.explorer {
+  overflow: hidden;
+}
+.explorerContent {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 120px);
+}
+.dropzoneWrap {
+  width: calc(100% - 280px);
+  padding: 12px 0 24px 12px;
+  overflow: hidden;
+}
+.dropzoneWrap.fullSize {
+  width: 100%;
+  transition: all 0.3s ease;
+
+}
+.dropzone {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.buttonWrap {
+  display: flex;
+  margin-top: 24px;
+}
+.leftButtons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.buttonHover button {
+  text-indent: -99999px;
+  color: transparent;
+}
+.uploadButtons {
+  position: relative;
+}
+.upload {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  background: url('../../../assets/images/upload_btn.png') no-repeat center;
+  background-size: contain;
+  text-indent: -99999px;
+  color: transparent;
+}
+.uploadButtons > div + div {
+  position: absolute;
+  bottom: -64px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80px;
+  /* padding: 6px 0; */
+  border-radius: 8px;
+  border: 1px solid #DBDEE5;
+  box-shadow: 0px 0px 8px 0px #32324714;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #fff;
+  z-index: 11;
+}
+.uploadButtons > div + div button {
+  padding: 6px 14px;
+  /* padding: 0 14px; */
+  text-align: left;
+}
+.uploadButtons button + button {
+  border-top: 1px solid #DBDEE5;
+}
+.download {
+  width: 24px;
+  height: 24px;  
+  background: url('../../../assets/images/download_btn.png') no-repeat center;
+  background-size: contain;
+}
+.newFolder {
+  width: 24px;
+  height: 24px;  
+  background: url('../../../assets/images/newfolder_btn.png') no-repeat center;
+  background-size: contain;
+}
+.trash {
+  width: 24px;
+  height: 24px;  
+  background: url('../../../assets/images/trash_btn.png') no-repeat center;
+  background-size: contain;
+}
+.more {
+  width: 24px;
+  height: 24px;  
+  background: url('../../../assets/images/more_btn.png') no-repeat center;
+  background-size: contain;
+}
+.rightButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  gap: 32px;
+}
+.buttonHover {
+  padding: 6px;
+  border-radius: 4px;
+  transition: all 0.3s linear
+}
+.buttonHover:hover {
+  background-color: #E9F4FF;
+}
+.rightButtons button {
+  width: 24px;
+  height: 24px;
+}
+.selectWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.selectWrap button {
+  width: auto;
+  text-indent: initial;
+  color: #27282E;
+}
+.viewModeButtons {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.viewModeButtons::before, .viewModeButtons::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 16px;
+  background-color: #EBECF0;
+}
+.viewModeButtons::before {
+  left: -16px;
+}
+.viewModeButtons::after  {
+  right: -16px;
+}
+.viewModeButtons button {
+  width: 24px;
+  height: 24px;
+  text-indent: -99999px;
+  color: transparent;
+}
+.iconView {
+  background: url('../../../assets/images/iconview_btn.png') no-repeat center;
+  background-size: contain;
+}
+.iconView.active {
+  background: url('../../../assets/images/iconview_active_btn.png') no-repeat center;
+  background-size: contain;
+}
+.listView {
+  background: url('../../../assets/images/listview_btn.png') no-repeat center;
+  background-size: contain;
+}
+.listView.active {
+  background: url('../../../assets/images/listview_active_btn.png') no-repeat center;
+  background-size: contain;
+}
+.infoButton {
+  background: url('../../../assets/images/info_btn.png') no-repeat center;
+  background-size: contain;
+  text-indent: -9999px;
+  color: transparent;
+}
+.infoButton.active {
+  background: url('../../../assets/images/info_active_btn.png') no-repeat center;
+  background-size: contain;
+}
+/* 정보 패널 */
+.panelWrap {
+  /* position: absolute;
+  top: 0;
+  right: 0; */
+  width: 280px;
+  height: 100%;
+  padding: 24px;
+  margin-left: auto;
+  border-left: 1px solid #EBECF0;
+  /* border-radius: 8px; */
+}
+
+
+/* 업로드 모달 */
+.modal_item_top {
+  display: flex;
+  padding: 10px 0;
+}

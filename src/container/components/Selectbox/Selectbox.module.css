@@ -1,0 +1,55 @@
+.Selectbox {
+  position: relative;
+}
+.Selectbox button {
+  width: 100%;
+  position: relative;
+  padding: 0 30px 0 2px;
+  /* border: 1px solid #ddd; */
+  /* border-radius: 4px; */
+  text-align: left;
+}
+/* .Selectbox button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 35px;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 80%;
+  background-color: #ddd;
+} */
+.Selectbox button::after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 6px;
+  background: url('../../../assets/images/selectbox_arrow.png') no-repeat center;
+  background-size: cover
+}
+.Selectbox ul {
+  min-width: 80px;
+  width: 100%;
+  position: absolute;
+  top: 30px;
+  border: 1px solid #DBDEE5;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px #3232470F;
+  overflow: hidden;
+}
+.Selectbox ul li {
+  padding: 6px 14px;
+  background-color: #fff;
+  font-size: 14px;
+  cursor: pointer; 
+  line-height: 20px;
+}
+.Selectbox ul li:hover {
+  background-color: #E9F4FF;
+}
+.Selectbox ul li + li {
+  border-top: 1px solid #ddd;
+}

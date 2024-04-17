@@ -1,0 +1,23 @@
+.pagenationWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+.pagenationWrap > button {
+  padding: 4px 4px;
+  /* background-color: #ddd; */
+  margin:0 2px;
+}
+.pageList {
+  padding: 0 10px;
+}
+.pageList button {
+  padding: 4px 8px;
+  /* border: 1px solid #ddd; */
+  border-radius: 4px;
+}
+.pageList .active {
+  color: #fff;
+  background-color: #005aff;
+}

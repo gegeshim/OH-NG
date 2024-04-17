@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 400;
+	src: url('./SUIT-Regular.woff2') format('woff2'),
+			 url('./SUIT-Regular.ttf') format('ttf'),
+			 url('./SUIT-Regular.otf') format('otf');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 500;
+	src: url('./SUIT-Medium.woff2') format('woff2'),
+			 url('./SUIT-Medium.ttf') format('ttf'),
+			 url('./SUIT-Medium.otf') format('otf');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 600;
+	src: url('./SUIT-SemiBold.woff2') format('woff2'),
+		 	 url('./SUIT-SemiBold.ttf') format('ttf'),
+			 url('./SUIT-SemiBold.otf') format('otf');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 700;
+	src: url('./SUIT-Bold.woff2') format('woff2'),
+			 url('./SUIT-Bold.ttf') format('ttf'),
+			 url('./SUIT-Bold.otf') format('otf');
+}

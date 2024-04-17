@@ -1,0 +1,30 @@
+.loginBox {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginBox > div {
+  width: 400px;
+}
+.loginWrap {
+  width: 100%;
+  padding: 30px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.loginWrap > h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.loginWrap > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.loginWrap > div + div {
+  margin-top: 10px; 
+}
+.loginWrap > div button {
+  margin-top: 10px;
+}

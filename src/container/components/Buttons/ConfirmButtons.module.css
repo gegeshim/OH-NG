@@ -1,0 +1,14 @@
+.ConfirmButtonsWrap {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.ConfirmButtonsWrap button {
+  padding: 10px 20px; 
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.ConfirmButtonsWrap button + button {
+  margin-left: 10px;
+}

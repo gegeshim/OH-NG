@@ -1,0 +1,8 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+.nav li {
+  padding: 10px 0;
+  font-weight: bold;
+}
