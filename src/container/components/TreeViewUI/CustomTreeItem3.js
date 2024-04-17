@@ -4,18 +4,15 @@ import styles from './TreeViewUI.module.css';
 import tree_chevron_open from 'assets/images/tree_chevron_open.png';
 import tree_chevron_close from 'assets/images/tree_chevron_close.png';
 
-export default function CustomTreeItem2({
-  node,
-  getNodeId,
-  getSelectedNodeChildren,
+export default function CustomTreeItem3({
+  node,expandedNodes, onNodeClick
 }) {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isExpanded, setIsExpanded] = useState(false);
-  const handleIconClick = (e, nodeId) => {
+//   const [isOpen, setIsOpen] = useState(false);
+const isOpen = expandedNodes.includes(node.id);
+  const handleIconClick = (e) => {
     e.preventDefault();
-    setIsOpen(!isOpen);
-    getNodeId(nodeId);
-    setIsExpanded(!isExpanded);
+    // setIsOpen(!isOpen);
+    onNodeClick(node.id)
   };
 
 
@@ -37,10 +34,10 @@ export default function CustomTreeItem2({
       {isOpen && node.children && (
         <div>
           {node.children.map((child) => (
-            <CustomTreeItem2
+            <CustomTreeItem3
               key={`customTreeItemChildren-${child.id}`}
               node={child}
-              getNodeId={getNodeId}
+              expandedNodes={expandedNodes} onNodeClick={onNodeClick}
             />
           ))}
         </div>
