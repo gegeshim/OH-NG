@@ -8,9 +8,18 @@ export default function CustomTreeView2({
   getNodeId,
   getSelectedNodeChildren,
 }) {
+
+  const [expandedNodes, setExpandedNodes] = useState([]);
   const handleNodeClick = (nodeId) => {
     getNodeId(nodeId);
+    if (!expandedNodes.includes(nodeId)) {
+      setExpandedNodes([...expandedNodes, nodeId]);
+    }
   };
+
+  const isNodeExpanded = (id) => {
+    expandedNodes.includes(id)
+  }
 
   return (
     <div className={styles.customTreeView}>
@@ -18,7 +27,7 @@ export default function CustomTreeView2({
         <CustomTreeItem2
           key={`customTreeParent-${parent.id}`}
           node={parent}
-          getNodeId={handleNodeClick}
+          getNodeId={handleNodeClick} isExpanded={isNodeExpanded(parent.id)}
         />
       ))}
     </div>
