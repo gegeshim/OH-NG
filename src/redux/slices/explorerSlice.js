@@ -2,7 +2,9 @@ import { createSlice } from '@reduxjs/toolkit';
 // 웹탐색기 상태 관리 리듀서
 
 const initialState = {
-  treeList: [],
+  currentTreeData: [],
+  selectedTreeId: null,
+  treeChildrenData: {},
   viewMode: 'icon',
   optionPanelOpen: true,
   folderOptions: {
@@ -90,6 +92,20 @@ const explorerSlice = createSlice({
       // 현재 선택된 파일의 속성
       state.selectedFile = action.payload;
     },
+    /* tree */
+    setCurrentTreeData(state, action) {
+      // ui에 보여지는 tree data
+      state.currentTreeData = action.payload;
+    },
+    setSelectedTreeId(state, action) {
+      // children 데이터를 추가할 id
+      // children의 id와 같을 때 currentTreeData 업데이트
+      state.selectedTreeId = action.payload;
+    },
+    setAddChildrenTreeData(state, action) {
+      // currentTreeData에 추가할 데이터
+      state.treeChildrenData = action.payload;
+    },
   },
 });
 
@@ -106,6 +122,9 @@ export const {
   setCheckedAllItems,
   setRemoveCheckedItem,
   setClearCheckedItems,
+  setCurrentTreeData,
+  setSelectedTreeId,
+  setAddChildrenTreeData,
 } = explorerSlice.actions;
 
 export default explorerSlice.reducer;

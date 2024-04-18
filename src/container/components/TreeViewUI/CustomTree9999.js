@@ -1,24 +1,30 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const TreeContext = React.createContext();
 
 let nextId = 0;
 
-export function Tree9999({ getNodeId,children, data, addChildrenItemsToParent, tag }) {
+export function Tree9999({
+  getNodeId,
+  children,
+  data,
+  addChildrenItemsToParent,
+  tag,
+}) {
   const [folders, setFolders] = useState(data || []);
 
   const handleToggle = (id) => {
-      console.log(id)
-      getNodeId(id)
+    console.log(id);
+    getNodeId(id);
     setFolders((prevFolders) =>
       prevFolders.map((folder) =>
-        folder.id === id ? { ...folder, hideChildren: !folder.hideChildren } : folder
+        folder.id === id
+          ? { ...folder, hideChildren: !folder.hideChildren }
+          : folder
       )
     );
-    addChildrenItemsToParent(id)
+    addChildrenItemsToParent(id);
   };
-
-
 
   const renderFolder = (folder) => {
     return (
@@ -27,7 +33,8 @@ export function Tree9999({ getNodeId,children, data, addChildrenItemsToParent, t
         <button onClick={() => handleToggle(folder.id)}>+/-</button>
         {!folder.hideChildren && (
           <ul>
-            {folder.children && folder.children.map((child) => renderFolder(child))}
+            {folder.children &&
+              folder.children.map((child) => renderFolder(child))}
           </ul>
         )}
       </li>
